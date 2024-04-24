@@ -32,6 +32,7 @@ public class CalculatorDemo2 {
         c2.sum();
         c2.avg();
 
+        //class 변수의 값을 변경해서 값 변경
         Calculator2.base= 10;
         c1.sum();
         c2.sum();
