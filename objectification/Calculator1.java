@@ -1,6 +1,6 @@
 package objectification;
 
-public class Calculator1 {
+class CalculatorDemo1 {
     int left, right;
 
     public void setOprands(int left, int right){
@@ -17,7 +17,7 @@ public class Calculator1 {
     }
 
 //estends로 확장해서 Calcualtor1을 사용 가능함
-public static class SubstractionableCalculator extends Calculator1 {
+public static class SubstractionableCalculator extends CalculatorDemo1 {
     public void substract() {
         System.out.println(this.left - this.right);
     }
@@ -31,7 +31,7 @@ public static class multiplicationableCalculator extends SubstractionableCalcula
 }
 
 
-public class CalculatorDemo {
+public class Calculator1 {
     public static void main(String[] args) {
 
         multiplicationableCalculator c1 = new multiplicationableCalculator();
