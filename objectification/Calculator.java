@@ -2,24 +2,36 @@ package objectification;
 //class 생성
 public class Calculator {
     static double PI = 3.14;
-    int legt, right;
+    int left, right;
 
-    public void setOprands(int legt, int right){
+    public void setOprands(int left, int right){
         //this.은 전역변수임,Calculator에서 생성된 변수
-        this.legt = legt;
+        this.left = left;
         this.right = right;
     }
 
     public void sum(){
-        System.out.println(this.legt + this.right);
+        System.out.println(this.left + this.right);
     }
 
     public void avg(){
-        System.out.println((this.legt + this.right) / 2);
+        System.out.println((this.left + this.right) / 2);
     }
+
+class SubstractionableCalculator extends Calculator {
+    public void substract() {
+        System.out.println(this.left - this.right);
+    }
+}
 
 public class CalculatorDemo {
     public static void main(String[] args) {
+
+        SubstractionableCalculator c3 = new SubstractionableCalculator();
+        c3.setOprands(10, 20);
+        c3.sum();
+        c3.avg();
+        c3.substract();
 
         //new Calculator()는 인스턴스를 생성
         //Calculator는 데이터 타입을 의미
