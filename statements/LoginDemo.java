@@ -1,4 +1,4 @@
-package numberstring.statements;
+package statements;
 import java.util.Scanner;
 
 public class LoginDemo {

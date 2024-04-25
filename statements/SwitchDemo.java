@@ -1,4 +1,4 @@
-package numberstring.statements;
+package statements;
 
 public class SwitchDemo {
     public static void main(String[]args){

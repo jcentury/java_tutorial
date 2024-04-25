@@ -1,7 +1,8 @@
 package objectification;
 //class 생성
 class Calculatorexample {
-    static double PI = 3.14;
+    //final을 사용하여 사용자가 값을 변경하지 못하게 함
+    static final double PI = 3.14;
     int left, right;
 
     public void setOprands(int left, int right){

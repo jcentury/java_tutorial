@@ -1,4 +1,4 @@
-package numberstring.statements;
+package statements;
 
 public class BoolenDemo {
 
