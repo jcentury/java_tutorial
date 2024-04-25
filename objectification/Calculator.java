@@ -1,6 +1,6 @@
 package objectification;
 //class 생성
-class Calculator1 {
+class Calculatorexample {
     static double PI = 3.14;
     int left, right;
 
@@ -24,13 +24,13 @@ public class Calculator {
 
         //new Calculator()는 인스턴스를 생성
         //Calculator는 데이터 타입을 의미
-        Calculator1 c1 = new Calculator1();
+        Calculatorexample c1 = new Calculatorexample();
         //setOprands를 통해서 값을 입력
         c1.setOprands(10, 20);
         c1.sum();
         c1.avg();
 
-        Calculator1 c2 = new Calculator1();
+        Calculatorexample c2 = new Calculatorexample();
         c2.setOprands(20, 40);
         c2.sum();
         c2.avg();
@@ -40,6 +40,6 @@ public class Calculator {
 
         System.out.println(c2.PI);
         //클래스를 통해서 접근
-        System.out.println(Calculator1.PI);
+        System.out.println(Calculatorexample.PI);
     }
 }
