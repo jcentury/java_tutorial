@@ -11,6 +11,24 @@ class Calculatorexample {
         this.right = right;
     }
 
+    public void divide(){
+        //오류시 오류 처리(예외) by zero
+        try{
+            System.out.println("실행결과는");
+            System.out.println(this.left / this.right);
+            System.out.println("입니다");
+        } catch(Exception e)
+        {    //예외가 발생했을 때 실행되는 로직
+            //간단한 정보만 표시
+            System.out.println("\n오류가 발생했습니다 : \n" + e.getMessage());
+            //조금더 자세한 정보를 표시
+            System.out.println("\n오류가 발생했습니다 : \n" + e.toString());
+            //에러사항을 출력
+            System.out.println("\n e.printStackTrace()\n" + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
     public void sum(){
         System.out.println(this.left + this.right);
     }
